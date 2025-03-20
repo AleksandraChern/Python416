@@ -2177,244 +2177,244 @@ from pyexpat.errors import messages
 # def slicer(tpl, el):
 #
 #
+# #
+# # print(slicer((1, 2, 3), 8))
+# # print(slicer((1, 8, 3, 4, 8, 8, 9, 2), 8))
+# # print(slicer((1, 2, 8, 5, 1, 2, 9), 8))
 #
-# print(slicer((1, 2, 3), 8))
-# print(slicer((1, 8, 3, 4, 8, 8, 9, 2), 8))
-# print(slicer((1, 2, 8, 5, 1, 2, 9), 8))
-
+# #
+# # dict_sales = {"John": {"N": 3056, "S": 8463, "E": 8441, "W": 2694}, "Tom": {"N": 4832, "S": 6786, "E": 4773, "W": 3612},
+# #               "Anne": {"N": 5239, "S": 4802, "E": 5820, "W": 1859},
+# #               "Fiona": {"N": 3904, "S": 3645, "E": 8821, "W": 2451}}
+# #
+# # g = {'John': {"N": 3056, "S": 8463, "E": 8441, "W": 2694}, 'Tom': {"N": 4832, "S": 6786, "E": 4737, "W": 3612},
+# #      'Anne': {"N": 5239, "S": 4802, "E": 5820, "W": 1859}, 'Fionna': {"N": 3904, "S": 3645, "E": 8821, "W": 2451}}
+# # for x, y in g.items():    print(x)
+# # for i, j in y.items():        print("\t", i, ": ", j, sep="")
+# #
+# # lst = ["one", 1, 2, 3, "two", 10, 20, "three", 15, 36, 60, "four", -20]
+# #
+# # one = {"name": "Igor", "surname": "Pavlov", "job": "Consultant"}
+# # two = {"name": "Irina", "surname": "Vetrova", "job": "Manager"}
+# #
+# # lst = [(1, 'a'), (2, 'b'), (3, 'c'), (4, 'd')]
+# #
+# # letter = ['b', 'a', 'd', 'c']
+# # number = [3, 4, 1, 2]
+# #
+# # one = {"один": 1, "два": 2}
+# # two = {"три": 3, "четыре": 4}
+# #
+# #
+# # def info(**data):    for
+# #
+# #
+# # k, v in data.items(): print(k, ":", v)
+# # print()
+# # info(name="Irina", surname="Vetrova", age=22)
+# # info(name="Igor", phone="456789", age=22, email="igor@mail.ru")
 #
-# dict_sales = {"John": {"N": 3056, "S": 8463, "E": 8441, "W": 2694}, "Tom": {"N": 4832, "S": 6786, "E": 4773, "W": 3612},
-#               "Anne": {"N": 5239, "S": 4802, "E": 5820, "W": 1859},
-#               "Fiona": {"N": 3904, "S": 3645, "E": 8821, "W": 2451}}
+# #
+# # countries = (
+# #     ("Германия", 80.2, (("Берлин", 3.326), ("Гамбург", 1.718))), ("Франция", 66, (("Париж", 2.2), ("Марсель", 1.6))),)
+# # print(countries)
+# # for country in countries:
+# #     country_name, country_population, cities = country
+# #     print("\nСтрана: ", country_name, ", население = ", country_population, sep="")
+# # for city in cities:        city_name, city_population = city
+# # print("\tГород: ", city_name, ", население = ", city_population, sep="")
+# #
+# # countries = (
+# #     ("Германия", 80.2, (("Берлин", 3.326), ("Гамбург", 1.718))), ("Франция", 66, (("Париж", 2.2), ("Марсель", 1.6))),)
+# #
+# #
+# #
+# # print(countries)
+# # for country in countries:
+# #     country_name, country_population, cities = country
+# #     print("\nСтрана: ", country_name, ", население = ", country_population, sep="")
+# #     for city in cities:
+# #         city_name, city_population = city
+# #         print("\tГород: ", city_name, ", население = ", city_population, sep="")
 #
-# g = {'John': {"N": 3056, "S": 8463, "E": 8441, "W": 2694}, 'Tom': {"N": 4832, "S": 6786, "E": 4737, "W": 3612},
-#      'Anne': {"N": 5239, "S": 4802, "E": 5820, "W": 1859}, 'Fionna': {"N": 3904, "S": 3645, "E": 8821, "W": 2451}}
-# for x, y in g.items():    print(x)
-# for i, j in y.items():        print("\t", i, ": ", j, sep="")
-#
-# lst = ["one", 1, 2, 3, "two", 10, 20, "three", 15, 36, 60, "four", -20]
-#
-# one = {"name": "Igor", "surname": "Pavlov", "job": "Consultant"}
-# two = {"name": "Irina", "surname": "Vetrova", "job": "Manager"}
-#
-# lst = [(1, 'a'), (2, 'b'), (3, 'c'), (4, 'd')]
-#
-# letter = ['b', 'a', 'd', 'c']
-# number = [3, 4, 1, 2]
-#
-# one = {"один": 1, "два": 2}
-# two = {"три": 3, "четыре": 4}
-#
-#
-# def info(**data):    for
-#
-#
-# k, v in data.items(): print(k, ":", v)
-# print()
-# info(name="Irina", surname="Vetrova", age=22)
-# info(name="Igor", phone="456789", age=22, email="igor@mail.ru")
-
-#
-# countries = (
-#     ("Германия", 80.2, (("Берлин", 3.326), ("Гамбург", 1.718))), ("Франция", 66, (("Париж", 2.2), ("Марсель", 1.6))),)
-# print(countries)
-# for country in countries:
-#     country_name, country_population, cities = country
-#     print("\nСтрана: ", country_name, ", население = ", country_population, sep="")
-# for city in cities:        city_name, city_population = city
-# print("\tГород: ", city_name, ", население = ", city_population, sep="")
-#
-# countries = (
-#     ("Германия", 80.2, (("Берлин", 3.326), ("Гамбург", 1.718))), ("Франция", 66, (("Париж", 2.2), ("Марсель", 1.6))),)
-#
-#
-#
-# print(countries)
-# for country in countries:
-#     country_name, country_population, cities = country
-#     print("\nСтрана: ", country_name, ", население = ", country_population, sep="")
-#     for city in cities:
-#         city_name, city_population = city
-#         print("\tГород: ", city_name, ", население = ", city_population, sep="")
-
-#
-# def outer(a1, b1, a2, b2):    a = 0
+# #
+# # def outer(a1, b1, a2, b2):    a = 0
+# #
+# #
+# # b = 0
+# #
+# #
+# # def inner():        a = a1 + a2
+# #
+# #
+# # b = b1 + b2
+# #
+# # from random import randint
+# #
+# # def ran (a, b):
+# #     return tuple(randint(a, b) for i in range(10))
+# #
+# # tpl1 = ran(0, 5)
+# # print(tpl1)
+# #
+# # tpl2 = ran(-5, 0)
+# # print(tpl2)
+# #
+# # tpl3 = tpl1 + tpl2
+# # print(tpl3)
+# # print("0=", tpl3.count(0))
 #
 #
-# b = 0
+# # Анонимные функции (Lambda-выражения)# def func(x, y):#
+# # return x + y### print(func(1, 2))##
+# # print((lambda x, y: x + y)(1, 2))## func = lambda x, y: x + y##
+# # print(func(1, 2))### func = (lambda x, y: x + y)(1, 2)#
+# # print(func)print((lambda a, b, c: a + b + c)(10, 20, 30))
+# # print((lambda a, b, c=3: a + b + c)(10, 20))
+# # print((lambda a, b=2, c=3: a + b + c)(10))
+# # print((lambda a=1, b=2, c=3: a + b + c)())
+# #
+# # print((lambda a, b, c: a + b + c)(10, 20, 30))
+# # print((lambda a, b, c=3: a + b + c)(10, 20))
+# # print((lambda a, b=2, c=3: a + b + c)(10))
+# # print((lambda a=1, b=2, c=3: a + b + c)())
+#
+# #
+# # players = [{'name': 'Антон', 'last name': 'Бирюков', 'rating': 9},
+# #            {'name': 'Алексей', 'last name': 'Бодня', 'rating': 10},
+# #            {'name': 'Федор', 'last name': 'Сидоров', 'rating': 4},
+# #            {'name': 'Михаил', 'last name': 'Семенов', 'rating': 6}]
 #
 #
-# def inner():        a = a1 + a2
+# # lst = [lambda x, y: x + y, lambda x, y: x - y, lambda x, y: x * y, lambda x, y: x / y]
+#
+# d = {1: lambda: print("Понедельник"),
+#      2: lambda: print("Вторник"),
+#      3: lambda: print("Среда"),
+#      4: lambda: print("Четверг"),
+#      5: lambda: print("Пятница"),
+#      6: lambda: print("Суббота"),
+#      7: lambda: print("Воскресенье")}
+#
+# # from random import randint# s = (lambda lst: [randint(10, 20) for i in range(10)])([])# print(s)#
+# # print([randint(10, 20) for i in range(10)])#
+# # print([i * 2 for i in [1, 2, 3, 4, 5, 6]])
 #
 #
-# b = b1 + b2
+# # from random import randint# s = (lambda lst: [randint(10, 20) for i in range(10)])([])#
+# # print(s)#
+# # print([randint(10, 20) for i in range(10)])#
+# # print([i * 2 for i in [1, 2, 3, 4, 5, 6]])
 #
-# from random import randint
 #
-# def ran (a, b):
-#     return tuple(randint(a, b) for i in range(10))
+# st = ['a', 'b', 'c', 'd', 'e', 'w']
+# num = [1, 2, 3, 4, 5]
+# print(dict(map(lambda x, y: (x, y), st, num)))
+# print(list(map(lambda x, y: (x, y), st, num)))
 #
-# tpl1 = ran(0, 5)
-# print(tpl1)
+# t = ('abcd', 'abc', 'cdefg', 'def', 'ghi')
 #
-# tpl2 = ran(-5, 0)
-# print(tpl2)
+# lst = [66, 90, 68, 59, 76, 60, 88, 74, 81, 65]
+# print(list(filter(lambda s: s > 75, lst)))
 #
-# tpl3 = tpl1 + tpl2
-# print(tpl3)
-# print("0=", tpl3.count(0))
-
-
-# Анонимные функции (Lambda-выражения)# def func(x, y):#
-# return x + y### print(func(1, 2))##
-# print((lambda x, y: x + y)(1, 2))## func = lambda x, y: x + y##
-# print(func(1, 2))### func = (lambda x, y: x + y)(1, 2)#
-# print(func)print((lambda a, b, c: a + b + c)(10, 20, 30))
-# print((lambda a, b, c=3: a + b + c)(10, 20))
-# print((lambda a, b=2, c=3: a + b + c)(10))
-# print((lambda a=1, b=2, c=3: a + b + c)())
+# nums = [45, 55, 60, 37, 100, 105, 220]
 #
-# print((lambda a, b, c: a + b + c)(10, 20, 30))
-# print((lambda a, b, c=3: a + b + c)(10, 20))
-# print((lambda a, b=2, c=3: a + b + c)(10))
-# print((lambda a=1, b=2, c=3: a + b + c)())
-
+# from random import randintlst = [randint(1, 40) for i in range(10)]
+# print(lst)
+# print(list(filter(lambda a: (a >= 10) and a <= 20, lst)))
+# print(list(filter(lambda a: 10 <= a <= 20, lst)))
 #
-# players = [{'name': 'Антон', 'last name': 'Бирюков', 'rating': 9},
-#            {'name': 'Алексей', 'last name': 'Бодня', 'rating': 10},
-#            {'name': 'Федор', 'last name': 'Сидоров', 'rating': 4},
-#            {'name': 'Михаил', 'last name': 'Семенов', 'rating': 6}]
-
-
-# lst = [lambda x, y: x + y, lambda x, y: x - y, lambda x, y: x * y, lambda x, y: x / y]
-
-d = {1: lambda: print("Понедельник"),
-     2: lambda: print("Вторник"),
-     3: lambda: print("Среда"),
-     4: lambda: print("Четверг"),
-     5: lambda: print("Пятница"),
-     6: lambda: print("Суббота"),
-     7: lambda: print("Воскресенье")}
-
-# from random import randint# s = (lambda lst: [randint(10, 20) for i in range(10)])([])# print(s)#
-# print([randint(10, 20) for i in range(10)])#
-# print([i * 2 for i in [1, 2, 3, 4, 5, 6]])
-
-
-# from random import randint# s = (lambda lst: [randint(10, 20) for i in range(10)])([])#
-# print(s)#
-# print([randint(10, 20) for i in range(10)])#
-# print([i * 2 for i in [1, 2, 3, 4, 5, 6]])
-
-
-st = ['a', 'b', 'c', 'd', 'e', 'w']
-num = [1, 2, 3, 4, 5]
-print(dict(map(lambda x, y: (x, y), st, num)))
-print(list(map(lambda x, y: (x, y), st, num)))
-
-t = ('abcd', 'abc', 'cdefg', 'def', 'ghi')
-
-lst = [66, 90, 68, 59, 76, 60, 88, 74, 81, 65]
-print(list(filter(lambda s: s > 75, lst)))
-
-nums = [45, 55, 60, 37, 100, 105, 220]
-
-from random import randintlst = [randint(1, 40) for i in range(10)]
-print(lst)
-print(list(filter(lambda a: (a >= 10) and a <= 20, lst)))
-print(list(filter(lambda a: 10 <= a <= 20, lst)))
-
-
-def my_decorator(func):    def
-
-
-func_wrapper(): print("Код до функции")
-func()
-print("Код после функции")
-return func_wrapperdef
-func_test(): print("Hello, I am func 'func_test'")
-test = my_decorator(func_test)
-test()
-
-
-def bold(fn):    def
-
-
-wrap():
-return "<b>" + fn() + "</b>"
-return wrapdef
-hello():
-return "text"
-print(hello())
-
-
-def args_dec(fn):    def
-
-
-wrap(x, y): print("Сложение:", x, "и", y, "=", end=" ")
-fn(x, y)
-return wrapdef
-summa(a, b): print(a + b)
-summa(5, 2)
-
-
-def multiply(arg):    def
-
-
-my_decorator(func):
-
-
-def wrap(*args, **kwargs):            return func(*args, **kwargs)
-
-
-return wrap
-return my_decorator @ multiply(3)
-
-
-def return_num(num):    return numprint("Результат:", return_num(5))
-
-
-print(
-    bin(18))  # 0b10010 - двоичная система счисленияprint(oct(18))  # 0o22 - восьмеричная система счисленияprint(hex(18))  # 0x12 - шестнадцатеричная система счисленияprint(0b10010)
-# print(0o22)print(0x12 + 0b10010 + 4)
-
-print(e)  # print(e * 3)#
-# print("y" in e)#
-# print("a" in e)#
-# print(e[-1])#
-# print(e[1:3])
-
-q = 'Pyt'
-w = "hon"
-e = q + w
-
-str1 = "Я изучаю Nython. Мне нравится Nython. Nython очень интересный язык программирования"
-
-
-
-s = "hello, WORLD! I am learning Python."
-
-st = "один два"print(st[st.find(" ") + 1:] + " " + st[:st.find(" ")])
-
-str1 = "Я изучаю Nython. Мне нравится Nython. Nython очень интересный язык программирования"
-
-s = "Я ищу совпадения в 2025 году. И я их найду в 2 счёта."
-
-st = "Час в 24-часовом формате от 00 до 23. 2021-06-15T21:45. Минуты, в диапазоне от 00 до 59. 2021-06-15T01:09."
-
-
-st = "author=Пушкин А.С.; title = Евгений Онегин; price =200; year= 1831"
-
-reg = r"\w+\s*=[^;]+"
-
-reg = r"\w+\s*=[^;]+"
-
-st = "+7 499 456-45-78, +74994564578, +7 (499) 456 45 78, 74994564578"
-
-# text = """# one# two# """#
-# print(re.findall(r"one.\w+", text))#
-# print(re.findall(r"one.\w+", text, re.DOTALL))#
-# print(re.findall(r"one$", text))# print(re.findall(r"one$", text, re.MULTILINE))
-
-names = ['Adam', ["Bob", ["Chet", "Cat"], "Bard", "Bert"], 'Alex', ["Bea", "Bill"], "Ann"]
-
+#
+# def my_decorator(func):    def
+#
+#
+# func_wrapper(): print("Код до функции")
+# func()
+# print("Код после функции")
+# return func_wrapperdef
+# func_test(): print("Hello, I am func 'func_test'")
+# test = my_decorator(func_test)
+# test()
+#
+#
+# def bold(fn):    def
+#
+#
+# wrap():
+# return "<b>" + fn() + "</b>"
+# return wrapdef
+# hello():
+# return "text"
+# print(hello())
+#
+#
+# def args_dec(fn):    def
+#
+#
+# wrap(x, y): print("Сложение:", x, "и", y, "=", end=" ")
+# fn(x, y)
+# return wrapdef
+# summa(a, b): print(a + b)
+# summa(5, 2)
+#
+#
+# def multiply(arg):    def
+#
+#
+# my_decorator(func):
+#
+#
+# def wrap(*args, **kwargs):            return func(*args, **kwargs)
+#
+#
+# return wrap
+# return my_decorator @ multiply(3)
+#
+#
+# def return_num(num):    return numprint("Результат:", return_num(5))
+#
+#
+# print(
+#     bin(18))  # 0b10010 - двоичная система счисленияprint(oct(18))  # 0o22 - восьмеричная система счисленияprint(hex(18))  # 0x12 - шестнадцатеричная система счисленияprint(0b10010)
+# # print(0o22)print(0x12 + 0b10010 + 4)
+#
+# print(e)  # print(e * 3)#
+# # print("y" in e)#
+# # print("a" in e)#
+# # print(e[-1])#
+# # print(e[1:3])
+#
+# q = 'Pyt'
+# w = "hon"
+# e = q + w
+#
+# str1 = "Я изучаю Nython. Мне нравится Nython. Nython очень интересный язык программирования"
+#
+#
+#
+# s = "hello, WORLD! I am learning Python."
+#
+# st = "один два"print(st[st.find(" ") + 1:] + " " + st[:st.find(" ")])
+#
+# str1 = "Я изучаю Nython. Мне нравится Nython. Nython очень интересный язык программирования"
+#
+# s = "Я ищу совпадения в 2025 году. И я их найду в 2 счёта."
+#
+# st = "Час в 24-часовом формате от 00 до 23. 2021-06-15T21:45. Минуты, в диапазоне от 00 до 59. 2021-06-15T01:09."
+#
+#
+# st = "author=Пушкин А.С.; title = Евгений Онегин; price =200; year= 1831"
+#
+# reg = r"\w+\s*=[^;]+"
+#
+# reg = r"\w+\s*=[^;]+"
+#
+# st = "+7 499 456-45-78, +74994564578, +7 (499) 456 45 78, 74994564578"
+#
+# # text = """# one# two# """#
+# # print(re.findall(r"one.\w+", text))#
+# # print(re.findall(r"one.\w+", text, re.DOTALL))#
+# # print(re.findall(r"one$", text))# print(re.findall(r"one$", text, re.MULTILINE))
+#
+# names = ['Adam', ["Bob", ["Chet", "Cat"], "Bard", "Bert"], 'Alex', ["Bea", "Bill"], "Ann"]
+print("Текст в локальном репозитории")
