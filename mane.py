@@ -2421,5 +2421,21 @@ from pyexpat.errors import messages
 # print("Мир во всём мире")
 # print("Пусть всегда будет солнце!")
 
-print("Код написан на новом устройстве")
+# print("Код написан на новом устройстве")
 
+# Файлы
+# f = open(r"C:\Users\User\Desktop\python\text.txt", "r")
+# f = open("text.txt")
+# print(*f)
+# print(f)
+# print(f.mode)
+# print(f.name)
+# print(f.encoding)
+#
+#
+# print(f.closed)
+# f.close()
+f = open("text.txt", "r")
+print(f.read(3))
+print(f.read())
+f.close()
