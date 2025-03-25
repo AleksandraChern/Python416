@@ -2417,4 +2417,4 @@ from pyexpat.errors import messages
 # # print(re.findall(r"one$", text))# print(re.findall(r"one$", text, re.MULTILINE))
 #
 # names = ['Adam', ["Bob", ["Chet", "Cat"], "Bard", "Bert"], 'Alex', ["Bea", "Bill"], "Ann"]
-print("Текст в локальном репозитории")
+# print("Текст в локальном репозитории")
