@@ -2419,3 +2419,4 @@ from pyexpat.errors import messages
 # names = ['Adam', ["Bob", ["Chet", "Cat"], "Bard", "Bert"], 'Alex', ["Bea", "Bill"], "Ann"]
 print("Текст в локальном репозитории")
 print("Мир во всём мире")
+print("Пусть всегда будет солнце!")
