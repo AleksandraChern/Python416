@@ -2415,8 +2415,8 @@ from pyexpat.errors import messages
 # # print(re.findall(r"one.\w+", text))#
 # # print(re.findall(r"one.\w+", text, re.DOTALL))#
 # # print(re.findall(r"one$", text))# print(re.findall(r"one$", text, re.MULTILINE))
-#
-# names = ['Adam', ["Bob", ["Chet", "Cat"], "Bard", "Bert"], 'Alex', ["Bea", "Bill"], "Ann"]
-print("Текст в локальном репозитории")
-print("Мир во всём мире")
-print("Пусть всегда будет солнце!")
+# #
+# # names = ['Adam', ["Bob", ["Chet", "Cat"], "Bard", "Bert"], 'Alex', ["Bea", "Bill"], "Ann"]
+# print("Текст в локальном репозитории")
+# print("Мир во всём мире")
+# print("Пусть всегда будет солнце!")
