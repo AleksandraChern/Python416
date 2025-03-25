@@ -2421,3 +2421,5 @@ from pyexpat.errors import messages
 # print("Мир во всём мире")
 # print("Пусть всегда будет солнце!")
 
+print("Код написан на новом устройстве")
+
