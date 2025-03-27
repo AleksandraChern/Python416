@@ -2434,8 +2434,12 @@ from pyexpat.errors import messages
 #
 #
 # print(f.closed)
+# # f.close()
+# f = open("text.txt", "r")
+# print(f.read(3))
+# print(f.read())
 # f.close()
-f = open("text.txt", "r")
-print(f.read(3))
-print(f.read())
-f.close()
+#
+# Файл — именованная область данных на носителе информации, используемая как базовый
+# объект взаимодействия с данными в операционных системах.
+
