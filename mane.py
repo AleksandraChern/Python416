@@ -2437,11 +2437,27 @@ from pyexpat.errors import messages
 # # f.close()
 # f = open("text.txt", "r")
 # print(f.read(3))
-# print(f.read())
-# f.close()
+# # print(f.read())
+# # f.close()
+# #
+# # Файл — именованная область данных на носителе информации, используемая как базовый
+# # объект взаимодействия с данными в операционных системах.
 #
-# Файл — именованная область данных на носителе информации, используемая как базовый
-# объект взаимодействия с данными в операционных системах.
+# # text = "Строка №1\nСтрока №2\nСтрока №3\nСтрока №4\nСтрока №5\nСтрока №6\nСтрока №7\nСтрока №8\nСтрока
+# # №9\nСтрока №10\n"
+# #
+f = open("texstnew.txt")
+# # f = open(r"C:\Users\User\Desktop\python\texstnew.txt", "r")
+print(*f)
+print(f)
+# print(f.mode)
+print(f.name)
+print(f.encoding)
 
-# text = "Строка №1\nСтрока №2\nСтрока №3\nСтрока №4\nСтрока №5\nСтрока №6\nСтрока №7\nСтрока №8\nСтрока
-# №9\nСтрока №10\n"
+f.close()
+print(f.closed)
+
+
+f = open("texstnew.txt", "r")
+print(f.read())
+f.close()
