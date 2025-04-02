@@ -2490,16 +2490,16 @@
 # from fileinput import close
 #
 # # file = "text2.txt"
-# # f = open(file, "w")
-# # f.write("Замена строки в текстовом файле;\nизменить строку в списке;\nзаписать список в файл;\n")
-# # f.close()
+f = open("texstnew.txt", "w", encoding="utf-8")
+f.write("Замена строки в текстовом файле;\nизменить строку в списке;\nзаписать список в файл;\n")
+f.close()
 # #
 # # file = "text2.txt"
 # #
-# # f = open(file, "w")
-# # f.write("Замена строки в текстовом файле;\nизменить строку в списке;\nзаписать список в файл;\n")
-# # f.close()
-# #
+# f = open(, "w")
+# f.write("Замена строки в текстовом файле;\nизменить строку в списке;\nзаписать список в файл;\n")
+# f.close()
+# # #
 # # f = open(file, "r")
 # # read_line = f.readlines()
 # # print(read_line)
@@ -2709,20 +2709,20 @@
 #
 # print(Point.__dict__)
 
-class Point:
-    x = 1
-    y = 2
-    def set_coord(self, x1, y1):
-        self.x = x1
-        self.y = y1
-
-
-p1 = Point()
-print(type(p1))
-p1.set_coord(5, 10)
-Point.set_coord(p1, 20, 30)
-print(p1.__dict__)
-
-p2 = Point()
-p2.set_coord(100, 200)
-print(p2.__dict__)
+# class Point:
+#     x = 1
+#     y = 2
+#     def set_coord(self, x1, y1):
+#         self.x = x1
+#         self.y = y1
+# #
+#
+# p1 = Point()
+# print(type(p1))
+# p1.set_coord(5, 10)
+# Point.set_coord(p1, 20, 30)
+# print(p1.__dict__)
+#
+# p2 = Point()
+# p2.set_coord(100, 200)
+# print(p2.__dict__)
