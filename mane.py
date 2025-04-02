@@ -2752,4 +2752,3 @@ f = open("test3.txt", "w", encoding="utf-8")
 f.writelines(read_line)
 f.close()
 
-print("Пусть всегда будет солнце!")
