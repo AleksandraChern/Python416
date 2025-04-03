@@ -2496,10 +2496,25 @@
 # #
 # # file = "text2.txt"
 # #
-# f = open(, "w")
-# f.write("Замена строки в текстовом файле;\nизменить строку в списке;\nзаписать список в файл;\n")
-# f.close()
+from dz.dz22.dz22 import read_line
+
+file = "text2.txt"
+f = open(file, "w", encoding="utf-8")
+f.write("Замена строки в текстовом файле;\nизменить строку в списке;\nзаписать список в файл;\n")
+f.close()
+
+f = open(file, "r", encoding="utf-8")
+read_line = f.readlines()
+print(read_line)
+read_line[1] = "Hello world!"
+print(read_line)
+f.close()
+
+f = open(file, "w", encoding="utf-8")
+f.write(read_line)
+f.close()
 # # #
+
 # # f = open(file, "r")
 # # read_line = f.readlines()
 # # print(read_line)
@@ -2727,28 +2742,4 @@
 # p2.set_coord(100, 200)
 # print(p2.__dict__)
 
-
-# encoding="utf-8"
-
-f = open("test3.txt", "w", encoding="utf-8")
-f.write("Замена строки в текстовом файле;\nизменить строку в списке;\nзаписать список в файл;\n")
-f.close()
-
-f = open("test3.txt", "r", encoding="utf-8")
-read_line = f.readlines()
-print(read_line)
-f.close()
-
-pos1 = int(input("pos1 = "))
-pos2 = int(input("pos2 = "))
-
-if 0 <= pos1 < len(read_line) and 0 <= pos2 < len(read_line):
-    read_line[pos1], read_line[pos2] = read_line[pos2], read_line[pos1]
-else:
-    print("Такой строки нет ")
-print(read_line)
-
-f = open("test3.txt", "w", encoding="utf-8")
-f.writelines(read_line)
-f.close()
 
