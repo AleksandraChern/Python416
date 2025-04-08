@@ -2783,27 +2783,479 @@
 # print(h1.get_name())
 #
 #
-class Person:
-    skill = 10
+# class Person:
+#     skill = 10
+#
+#     def __init__(self, name, surname):
+#         self.name = name
+#         self.surname = surname
+#         # print("Инициализатор для", self.name, self.surname)
+#
+#     def __del__(self):
+#         print("Удаление экземпляра")
+#
+#     def print_info(self):
+#         print("Данные сотрудника:", self.name, self.surname)
+#
+#     def add_skill(self, k):
+#         self.skill += k
+#         print("Квалификация сотрудника:", self.skill, "\n")
+#
+#
+#
+# p1 = Person("Виктор", "Резник")
+# p1.print_info()
+# p1.add_skill(3)
+#
+# del p1
+# print()
+#
+# p2 = Person("Анна", "Долгих")
+# p2.print_info()
+# p2.add_skill(2)
+#
+# class Point:
+#     count = 0
+#
+#
+#     def __init__(self, x=0, y=0):
+#         self.x = x
+#         self.y = y
+# #         Point.count += 1
+# #
+# # p1 = Point()
+# p2 = Point()
+# p3 = Point()
+# print(Point.count)
+#
+# class Robot:
+#     k = 0
+#
+#     def __init__(self, name):
+#         self.name = name
+#         print("Инициализация робота:", self.name)
+#         Robot.k += 1
+#
+#     def __del__(self):
+#         print(self.name, "выключается!")
+#         Robot.k -= 1
+#
+#         if Robot.k == 0:
+#             print(self.name, "был последним")
+#         else:
+#             print("Работающих роботов осталось:", Robot.k)
+#
+#
+#     def say_hi(self):
+#         print("Приветствую! Меня зовут:", self.name)
+#
+#
+# droid1 = Robot("R2-D2")
+# droid1.say_hi()
+# print("Численность роботов:", Robot.k)
+#
+# droid2 = Robot("С-3PO")
+# droid2.say_hi()
+# print("Численность роботов:", Robot.k)
+#
+# droid3 = Robot("PC-30")
+# droid3.say_hi()
+# print("Численность роботов:", Robot.k)
+#
+# print("\nЗдесь роботы могут проделать какую-то работу\n")
+# print("Роботы закончили свою работу. Давайте их выключим.")
+#
+# del droid3
+# del droid2
+# del droid1
+#
+# print("Численность роботов:", Robot.k)
+#
+#
+# self.__x = self.__y = 0if Point.__check_value(x) and Point.__check_value(y):
+#
+# f = open("xyz1.txt", "w", encoding="utf-8")
+# f.write("This is line1.\nThis is line2.\nThis is line3.\n")
+# f.close()
 
-    def __init__(self, name, surname):
-        self.name = name
-        self.surname = surname
-        # print("Инициализатор для", self.name, self.surname)
+# f = open("xyz1.txt")
+# print(f.read())
 
-    def print_info(self): #инициализатор
-        print("Данные сотрудника:", self.name, self.surname)
+# print(f.readline())
+# print(f.readline(8))
+# print(f.readline())
+# print(f.readline())
+#
+# print(f.readlines(15))
+# print(f.readlines())
+#
+# f = open("xyz1.txt")
+# for line in f:
+#     print(line)
+# f.close()
+#
+# lines1 = ["This is line1.\n", "This is line2.\n", "This is line3.\n"]
+# f = open("lines1.txt", "w", encoding="utf-8")
+# f.writelines(lines1)
+# f.close()
+#
+# lines1 = ["This is line1.\n", "This is line2.\n", "This is line3.\n"]
+#
+# lines1 = [str(i) for i in range(10, 1000, 15)]
+# print(lines1)
+#
+# f = open("lines1.txt", "w", encoding="utf-8")
+# for index in lines1:
+#     f.write(index + "\t")
+# f.close()
 
-    def add_skill(self, k):
-        self.skill += k
-        print("Квалификация сотрудника:", self.skill, "\n")
+
+# Замена строки
+#
+# file1 = "test.txt"
+# f = open("test.txt", "w", encoding="utf-8")
+# f.write("Замена строки в текстовом файле;\nзаменить строку в списке;\nзаписать список в файл;\n")
+#
+# f.close()
+#
+# f = open(file1, "r", encoding="utf-8")#
+# read_line = f.readlines()
+# print(read_line)
+# read_line[1] = "Hello world!\n"
+# print(read_line)
+# f.close()
+#
+# f = open(file1, "w", encoding="utf-8")
+# f.writelines(read_line)
+# f.close()
 
 
+#
 
-p1 = Person("Виктор", "Резник")
-p1.print_info()
-p1.add_skill(3)
+# Файлы
 
-p2 = Person("Анна", "Долгих")
-p2.print_info()
-p2.add_skill(2)
+# f = open("text.txt")
+# # f = open(r"E:\Python416\416\text.txt", "r")
+# print(*f)
+# print(f)
+# print(f.mode)
+# print(f.name)
+# print(f.encoding)
+# f.close()
+# print(f.closed)
+
+
+# f = open("text.txt", "r")
+# # print(f.read(3))
+# print(f.read())
+# f.close()
+
+# f = open("xyz.txt", "w")
+# f.write("This is line1.\nThis is line2.\nThis is line2.\n")
+# f.close()
+
+# f = open("xyz.txt")
+# print(f.read())
+
+# print(f.readline())
+# print(f.readline(8))
+# print(f.readline())
+# print(f.readline())
+
+# print(f.readlines(15))
+# print(f.readlines())
+
+# f.close()
+
+
+# f = open("xyz.txt")
+# for line in f:
+#     print(line)
+# f.close()
+
+# lines = ["This is line1.\n", "This is line2.\n", "This is line3.\n"]
+#
+# f = open("lines.txt", "w")
+# f.writelines(lines)
+# f.close()
+
+# lines = [str(i) for i in range(10, 1000, 15)]
+# print(lines)
+#
+# f = open("lines.txt", "w")
+# for index in lines:
+#     f.write(index + "\t")
+# f.close()
+
+# file = "text2.txt"
+#
+# f = open(file, "w")
+# f.write("Замена строки в текстовом файле;\nизменить строку в списке;\nзаписать список в файл;\n")
+# f.close()
+#
+#
+# f = open(file, "r")
+# read_line = f.readlines()
+# print(read_line)
+# read_line[1] = "Hello world!\n"
+# print(read_line)
+# f.close()
+
+# f = open(file, "w")
+# f.writelines(read_line)
+# f.close()
+
+
+# f = open("text.txt", "r")
+# print(f.read(3))
+# print(f.tell())  # возвращает текущую позицию условного курсора в файле
+# print(f.seek(1))  # перемещает условный курсор в заданную позицию
+# print(f.read())
+# print(f.tell())
+# f.close()
+
+
+# f = open("text5.txt", "a")
+# print(f.write("I am learning Python"))
+# print(f.seek(0))
+# print(f.write("--new string--"))
+# # print(f.read())
+# f.close()
+
+# with open("text.txt", "w") as f:
+#     print(f.write("0123456789"))
+# print(f.closed)
+
+# lst = [4.5, 2.8, 3.9, 1.0, 0.3, 4.33, 5.04]
+#
+#
+# def get_line(lt):
+#     lt = list(map(str, lt))
+#     return " ".join(lt)
+#
+#
+# with open("res.txt", "w") as f:
+#     f.write(get_line(lst))
+#
+# print("Конец программы")
+
+
+# with open("res.txt") as f:
+#     nums = f.read()
+#
+# print(nums)
+#
+# print(map(float, nums.split()))
+# print(list(map(float, nums.split())))
+# print(sum(list(map(float, nums.split()))))
+# print(sum(map(float, nums.split())))
+
+
+# with open("res2.txt", "w") as f:
+#     f.write("Файл — именованная область данных на носителе информации, используемая как базовый объект "
+#             "с данными в операционных системах.")  # взаимодействия
+#
+#
+# def longest_words(file):
+#     with open(file) as text:
+#         w = text.read().split()
+#         print(w)
+#         max_length = len(max(w, key=len))
+#         print(max_length)
+#         res = [word for word in w if len(word) == max_length]
+#         if len(res) == 1:
+#             return res[0]
+#         return res
+#
+#
+# print(longest_words("res2.txt"))
+
+
+# text = "Строка №1\nСтрока №2\nСтрока №3\nСтрока №4\nСтрока №5\nСтрока №6\nСтрока №7\nСтрока
+# №8\nСтрока №9\nСтрока №10\n"
+# with open("one.txt", "w") as f:
+#     f.write(text)
+#
+# with open("one.txt", "r") as fr, open("two.txt", "w") as fw:
+#     for line in fr:
+#         line = line.replace("Строка", "Линия -")
+#         fw.write(line)
+
+
+# import os
+#
+# # print(os.getcwd())  # путь к текущей директории
+# #
+# # print(os.listdir())  # возвращает список директорий и файлов
+# # print(os.listdir(".."))
+# # print(os.listdir(".venv"))
+#
+# # os.mkdir("folder")  # создать папку
+# # os.rmdir("folder.txt")  # удалить папку
+#
+# # os.makedirs("nested1/nested2/nested3")  # создает директорию с промежуточными папками
+#
+# # os.remove("xyz.txt")  # удалить файл
+#
+# # os.rename("two.txt", "www.txt")  # переименовали файл
+#
+# # os.rename("www.txt", "folder/www.txt")  # переместили файл в заданную папку
+#
+# os.renames("text4.txt", "test/text4.txt")  # переместили файл, создавая промежуточные папки
+
+
+# f = open("test3.txt", "w")
+# f.write("Замена строки в текстовом файле;\nизменить строку в списке;\nзаписать список в файл;\n")
+# f.close()
+#
+# f = open("test3.txt", "r")
+# read_line = f.readlines()
+# print(read_line)
+# f.close()
+#
+# pos1 = int(input("pos1 = "))
+# pos2 = int(input("pos2 = "))
+#
+# if 0 <= pos1 < len(read_line) and 0 <= pos2 < len(read_line):
+#     read_line[pos1], read_line[pos2] = read_line[pos2],  read_line[pos1]
+# else:
+#     print("Такой строки нет")
+#
+# print(read_line)
+#
+# f = open("test3.txt", "w")
+# f.writelines(read_line)
+# f.close()
+
+# import os
+#
+# # print(os.walk("nested1"))
+# # for root, dirs, files in os.walk("nested1", topdown=False):
+# #     print("Root:", root)
+# #     print("\tdirs:", dirs)
+# #     print("\tFiles:", files)
+#
+# # import os.path
+#
+# print(os.path.split(r"E:\Python416\nested1\nested2\nested3\text5.txt"))
+#
+# print(os.path.join("nested1", r"E:\Python416", "nested2", "nested3", "text5.txt"))
+
+
+# import os
+#
+# dirs = [r"Work\F1", r"Work\F2\F21"]
+# # for d in dirs:
+# #     os.makedirs(d)
+#
+# files = {
+#     "Work": ["w.txt"],
+#     r"Work\F1": ["f11.txt", "f12.txt", "f13.txt"],
+#     r"Work\F2\F21": ["f211.txt", "f212.txt"]
+# }
+#
+# for d, files in files.items():
+#     for file in files:
+#         file_path = os.path.join(d, file)
+#         # print(file_path)
+#         open(file_path, "w").close()
+#
+#
+# file_with_text = [r"Work\w.txt", r"Work\F1\f12.txt", r"Work\F2\F21\f211.txt", r"Work\F2\F21\f212.txt"]
+#
+# for file in file_with_text:
+#     with open(file, "w") as f:
+#         f.write(f"Такой-то текст в файле {file}")
+#
+#
+# def print_tree(root, topdown):
+#     print(f"Обход {root} {'сверху вниз' if topdown else 'снизу вверх'}")
+#     for root1, directory, file_name in os.walk(root, topdown):
+#         print(root1)
+#         print(directory)
+#         print(file_name)
+#     print("-" * 50)
+#
+#
+# print_tree("Work", False)
+# print_tree("Work", True)
+
+# import os
+# import time
+#
+# # print(os.path.exists(r"nested1\nested2\nested3\text5.txt"))
+# # print(os.path.isfile(r"nested1\nested2\nested3\text5.txt"))
+# # print(os.path.isdir(r"nested1\nested2\nested3"))
+#
+# file = "main.py"
+#
+# print(os.path.getsize(file))  # размер файла в байтах
+# print(os.path.getatime(file))  # возвращает время последнего доступа к файлу
+# print(os.path.getmtime(file))  # возвращает время последнего изменения файла
+# print(os.path.getctime(file))  # возвращает время создания файла
+#
+# kb = os.path.getsize(file)
+# a = os.path.getatime(file)
+# m = os.path.getmtime(file)
+# c = os.path.getctime(file)
+#
+# print(time.strftime("%d.%m.%Y, %H:%M:%S", time.localtime(a)))
+# print(time.strftime("%d.%m.%Y, %H:%M:%S", time.localtime(m)))
+# print(time.strftime("%d.%m.%Y, %H:%M:%S", time.localtime(c)))
+# print(kb // 1024)
+
+# class Point:
+#     x = 1  # 100
+#     y = 2
+#
+# #
+# # p1 = Point()
+# # p1.x = 10
+# # p1.y = 20
+# # # Point.x = 100
+# # print(p1.x, p1.y)
+# # print(p1.__dict__)
+# #
+# # p2 = Point()
+# # print(p2.x, p2.y)
+# # p2.x = 5
+# # print(p2.__dict__)
+# #
+# # print(Point.__dict__)
+#
+# def func():
+#     print("текст")
+#
+#
+# func()
+#
+#
+# class Point:
+#     """Класс для предоставления координат точек на плоскости"""
+#     x = 1
+#     y = 2
+#
+#     def set_coord(self, x1, y1):
+#         self.x = x1
+#         self.y = y1
+
+
+# p1 = Point()  # экземпляр класса (объект)
+# p1.set_coord(5, 3)
+# print(p1.__dict__)
+# # print(Point.__doc__)
+# # print(Point.__dict__)
+# print(type(p1))
+# print(type(5))
+# p1.x = 5
+# p1.y = 10
+# p1.set_coord(5, 10)
+# print(p1.__dict__)
+# print(p1.x)
+# # Point.set_coord(p1, 20, 30)
+# # print(p1.__dict__)
+# #
+# p2 = Point()
+# p2.set_coord(100, 200)
+# print(p2.__dict__)
+# print(p2.x)
