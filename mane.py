@@ -3259,3 +3259,25 @@
 # p2.set_coord(100, 200)
 # print(p2.__dict__)
 # print(p2.x)
+#
+# class Rectangle:
+#     def __init__(self, length, width):
+#         self.__length = length
+#         self__width = width
+#
+#     def __check_value(c):
+#         if isinstance(c, int) or isinstance(c, float):
+#             return True
+#         return False
+#
+#     def set__width(self, width):
+#         if Rectangle.__check_value(width):
+#             self.__width = width
+#
+#     def set_leught(self, length):
+#         if Rectangle.__check_value(length):
+#             self.__length = length
+#
+#     def get_wight(self):
+#         def width = width
+#
