@@ -2514,6 +2514,7 @@
 # f.write(read_line)
 # f.close()
 # # # #
+import os
 
 # # f = open(file, "r")
 # # read_line = f.readlines()
@@ -3281,3 +3282,90 @@
 #     def get_wight(self):
 #         def width = width
 #
+#
+# f = open("xyz2.txt", "w", encoding="utf-8")
+# f.write("This is line1.\nThis is line2.\nThis is line3.\n")
+# f.close()
+
+# f = open("xyz2.txt")
+# print(f.read())
+# print(f.readline())
+# print(f.readline(8))
+# # print(f.readline())
+# print(f.readlines(15))# считывает элементы как список строк
+# print(f.readlines())
+#
+# f = open("xyz2.txt")
+#
+# f.close()
+#
+# import os
+#
+# # print(os.walk("Work"))
+# for root, dirs, files in os.walk("Work", topdown=False):
+#     print("Root:", root)
+#     print("\tdirs:", dirs)
+#     print("\tfiles:", files)
+#
+#
+# import os
+#
+#
+# dirs = [r"Work2\F1", r"Work2\F2\F21"]
+# # for d in dirs:
+# #     os.makedirs(d)
+#
+# files = {
+#     "Work2": ["w.txt"],
+#     r"Work2\F1": ["f11.txt", "f12.txt", "f13.txt"],
+#     r"Work2\F2\F21": ["f211.txt", "f212.txt"]
+# }
+# for d, files in files.items():
+#     for file in files:
+#         file_path = os.path.join(d, file)
+#         # print(file_path)
+#
+# open(file_path, "w", encoding="utf-8").close()
+# file_with_text = [r"Work2\w.txt", r"Work2\F1\f12.txt", r"Work2\F2\F21\f212.txt", r"Work2\F2\F21\f213.txt"]
+#
+# for file in file_with_text:
+#     with open(file, "w", encoding="utf-8") as f:
+#         f.write(f"Всем мира и любви! {file}")
+#
+#
+# def print_tree(root, topdown):
+#     print(f"Обход {root}{'сверху вниз' if topdown else 'снизу вверх'}")
+#     for root, directory, file_name in os.walk(root, topdown):
+#         print(root)
+#         print(directory)
+#         print(file_name)
+#     print("-" * 50)
+#
+# print_tree("Work2", False)
+# print_tree("Work2", True)
+#
+# import os
+#
+# print(os.path.exists(r"C:\Users\User\Desktop\python\Work2\F1\f12.txt"))
+
+
+#
+# class Human:
+#     name = "name"
+#     birthday = "00.00.0000"
+#     phone = "00.00.00"
+#     counrty = "country"
+#     city = "city"
+#     address = "street, house"
+#
+#     def print_info(self):
+#         print(" Персональные данные ".center(40, "*"))
+#
+#         print("=" * 40)
+
+#
+# h1 = Human()
+# h1.print_info()
+#
+
+
